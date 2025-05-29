@@ -9,103 +9,145 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
   
 </head>
 <body>
   <header>
     <div class="header-content">
-      <img src="tu-foto.jpg" alt="Foto de Sebastián" class="perfil-img">
+      <img src="img/Yo.jpeg" alt="Foto" class="perfil-img">
       <div>
         <h1>¡Hola! Soy Sebastián</h1>
-        <p>🎓 Estudiante de Ingeniería en Sistemas | 👨‍💻 Desarrollador Web Junior</p>
+        <p>🎓 Ingeniero en Sistemas(A la espera del título) | 👨‍💻 Desarrollador Web Junior</p>
       </div>
     </div>
+    <section class="contacto-cv-container">
+      <div id="contacto">
+        <h2><i class="fas fa-envelope"></i> Contacto</h2>
+        <p><i class="fas fa-paper-plane"></i> Email: <a href="mailto:sbriones284@gmail.com">sbriones284@gmail.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sebas-briones-291633262/" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/sebasExec" target="_blank">GitHub</a></p>
+      </div>
+    
+      <div id="cv">
+        <h2><i class="fas fa-file-download"></i> Descargar CV</h2>
+        <div class="cv-buttons">
+          <a href="CV.pdf" class="btn-cv" download>
+            <i class="fas fa-file-pdf"></i> Español
+          </a>
+          <a href="CVE.pdf" class="btn-cv" download>
+            <i class="fas fa-file-pdf"></i> English
+          </a>
+        </div>
+      </div>
+    </section>
+    
   </header>
 
   <section id="sobre-mi">
     <h2><i class="fas fa-user"></i> Sobre mí</h2>
-    <p>Soy un apasionado por la tecnología, la programación y el aprendizaje continuo. Actualmente estudio Ingeniería en Sistemas y me encanta trabajar en proyectos donde pueda aplicar mis habilidades y seguir creciendo.</p>
+    <p>Soy un apasionado por la tecnología, la programación y el aprendizaje continuo. Actualmente he terminado mi carrera de Ingeniería en Sistemas, estoy a la espera de mi graduación. Me encanta trabajar en proyectos donde pueda aplicar mis habilidades y seguir creciendo.</p>
   </section>
 
   <section id="proyectos">
-    <h2><i class="fas fa-code"></i> Proyectos</h2>
-    <div class="proyecto">
-      <h3><i class="fas fa-layer-group"></i> Proyecto de pilas</h3>
-      <p>Implementación de una estructura de datos tipo pila usando Java, con operaciones como push, pop, peek y verificación de estado. Desarrollado sin colecciones predefinidas (NetBeans).</p>
-      <a href="https://github.com/sebasExec/ProyectoEstructuraDeDatos" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
-    </div>
-  </section>
+  <h2><i class="fas fa-code"></i> Proyectos</h2>
+  <div class="proyectos-grid">
+    
+    <div class="proyecto-card">
+  <img src="img/ProyectoPilas.png" alt="Proyecto de Pilas">
+  <div class="proyecto-contenido">
+    <h3><i class="fas fa-layer-group"></i> Proyecto de pilas</h3>
+    <p>Implementación de una estructura de datos tipo pila usando Java, con operaciones como push, pop, peek y verificación de estado. Desarrollado sin colecciones predefinidas (NetBeans).</p>
+    <a href="https://github.com/sebasExec/ProyectoEstructuraDeDatos" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+  </div>
+</div>
 
-  <section id="habilidades">
-    <h2><i class="fas fa-lightbulb"></i> Habilidades</h2>
-    <div class="cards-container">
-      <div class="card">
-        <h3><i class="fas fa-code"></i> Lenguajes</h3>
-        <ul>
-          <li>Java</li>
-          <li>PHP</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>ASP.NET Core</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-code"></i> Frameworks y Web</h3>
-        <ul>
-          <li>MVC</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>Adobe XD</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-code"></i> Bases de Datos</h3>
-        <ul>
-          <li>PL/SQL</li>
-          <li>Oracle</li>
-          <li>MySQL</li>
-          <li>PostgreSQL</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-code"></i> Herramientas</h3>
-        <ul>
-          <li>Oficce 365</li>
-          <li>Canva</li>
-          <li>GitHub</li>
-          <li>Supabase</li>
-          <li>Firebase</li>
-          <li>AI Tools</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-code"></i> Metodologías</h3>
-        <ul>
-          <li>Scrum</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<div class="proyecto-card">
+  <img src="img/Techcom.png" alt="Proyecto Tienda Tecnológica">
+  <div class="proyecto-contenido">
+    <h3><i class="fas fa-layer-group"></i> Proyecto de Techcom</h3>
+    <p>Tienda en línea para productos tecnológicos desarrollada en PHP y XAMPP. Gestión de productos, carrito de compras y proceso de compra con administración básica.</p>
+    <a href="https://github.com/sebasExec/Techcom" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+  </div>
+</div>
 
-  <section id="contacto">
-    <h2><i class="fas fa-envelope"></i> Contacto</h2>
-    <p><i class="fas fa-paper-plane"></i> Email: <a href="mailto:sbriones284@gmail.com">sbriones284@gmail.com</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sebas-briones-291633262/" target="_blank">LinkedIn</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/sebasExec" target="_blank">GitHub</a></p>
+<div class="proyecto-card">
+  <img src="img/Harmony GYM.png" alt="Sistema Gimnasio">
+  <div class="proyecto-contenido">
+    <h3><i class="fas fa-layer-group"></i> Proyecto de HarmonyGYM</h3>
+    <p>Sistema web con .NET Core para gestión de inscripciones, clases y entrenadores en un gimnasio. Registro de usuarios, reservas y panel administrativo eficiente.</p>
+    <a href="https://github.com/sebasExec/HarmonyGYM" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+  </div>
+</div>
+
+<div class="proyecto-card">
+  <img src="img/PieSalud.jpg" alt="Consultorio Podológico">
+  <div class="proyecto-contenido">
+    <h3><i class="fas fa-layer-group"></i> Proyecto de PieSalud</h3>
+    <p>Sistema web para gestión de pacientes y citas en consultorio podológico. Implementado en .NET Core y desplegado en Azure para mayor escalabilidad y disponibilidad.</p>
+    <a href="https://github.com/sebasExec/Piesalud-Project" target="_blank"><i class="fab fa-github"></i> Ver en GitHub</a>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<br>
+<section id="habilidades">
+  <h2><i class="fas fa-lightbulb"></i> Habilidades</h2>
   </section>
-  
-  <section id="cv">
-    <h2><i class="fas fa-file-download"></i> Descargar CV</h2>
-    <div class="cv-buttons">
-      <a href="CV.pdf" class="btn-cv" download>
-        <i class="fas fa-file-pdf"></i> CV en Español
-      </a>
-      <a href="CVE.pdf" class="btn-cv" download>
-        <i class="fas fa-file-pdf"></i> CV in English
-      </a>
+<br>
+<br>
+
+<div class="container-fluid py-5">
+  <div class="row px-xl-5">
+    <div class="col">
+      <div class="owl-carousel vendor-carousel">
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Python.png" alt="Marca 1">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Java.png" alt="Marca 2">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/JS.png" alt="Marca 3">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/php.png" alt="Marca 4">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Html.png" alt="Marca 5">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Css.png" alt="Marca 6">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Asp.png" alt="Marca 7">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Oracle.png" alt="Marca 8">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/mysql.png" alt="Marca 8">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Postgre.png" alt="Marca 8">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Git.png" alt="Marca 8">
+        </div>
+        <div class="bg-light p-4">
+          <img class="img-fluid h-20" src="img/Firebase.png" alt="Marca 8">
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</div>
+
   
   <footer>
     <p>© 2025 Sebastián. Todos los derechos reservados.</p>
@@ -113,3 +155,27 @@
   
 </body>
 </html>
+
+
+<!-- jQuery (requerido por Owl Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Inicialización del carrusel -->
+<script>
+  $(document).ready(function(){
+    $('.vendor-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        responsive:{
+            0:{ items:2 },
+            600:{ items:4 },
+            1000:{ items:6 }
+        }
+    });
+  });
+</script>
