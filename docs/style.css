@@ -1,158 +1,131 @@
 body {
+  background-color: #000; /* fondo negro */
+  color: #eee; /* texto claro */
   font-family: 'Inter', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f8f9fb;
-  color: #333;
+  padding: 0 1rem;
 }
-
-header {
-  background-color: #004c99;
-  color: white;
-  padding: 2rem;
+a {
+  color: #61dafb;
+  text-decoration: none;
 }
-
+a:hover {
+  color: #21a1f1;
+  text-decoration: underline;
+}
+header, section, footer {
+  color: #eee;
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem 0;
+}
 .header-content {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: auto;
+  gap: 1rem;
 }
-
 .perfil-img {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #fff;
+  border: 2px solid #61dafb;
 }
 
-h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-section {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  color: #004c99;
-  margin-bottom: 1rem;
-}
-
+/* Proyectos */
 .proyecto {
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  background-color: #1a1a1a;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-a {
-  color: #007acc;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  text-align: center;
   padding: 1rem;
-  background-color: #e1e1e1;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  color: #eee;
+}
+.proyecto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 25px rgba(255,255,255,0.3);
+  background-color: #333;
 }
 
-/* Cards */
+/* Habilidades */
 .cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
-
 .card {
-  background-color: #fff;
+  background-color: #1a1a1a;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 160px;
+  box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
+  color: #eee;
 }
-
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(255,255,255,0.25);
+  background-color: #333;
 }
-
-
 .card h3 {
-  color: #004c99;
-  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
-
 .card ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+}
+.card ul li {
+  font-size: 1.5rem;
+  margin: 0.4rem 0;
+  color: #61dafb;
 }
 
-.card ul li::before {
-  content: "✔️ ";
-  margin-right: 4px;
+/* Contacto */
+#contacto p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
 }
+
+/* CV */
 #cv {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
   text-align: center;
+  margin-top: 2rem;
 }
-
 .cv-buttons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 1rem;
 }
-
 .btn-cv {
-  background-color: #007acc;
-  color: white;
-  padding: 0.75rem 1.5rem;
+  background-color: #1a1a1a;
+  color: #61dafb;
+  padding: 0.8rem 1.5rem;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: 600;
+  box-shadow: 0 4px 6px rgba(255,255,255,0.1);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .btn-cv:hover {
-  background-color: #005fa3;
-}
-  
-.icon-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: start;
+  background-color: #333;
+  box-shadow: 0 10px 20px rgba(255,255,255,0.3);
+  color: #21a1f1;
 }
 
-.icon-list li {
-  font-size: 2rem;
-  color: #333;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+  margin-top: 3rem;
+  color: #777;
 }
